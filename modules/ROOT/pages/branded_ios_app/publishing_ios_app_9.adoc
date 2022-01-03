@@ -59,7 +59,6 @@ image:branded_ios_app/ios-publish-7.png[figure 7]
 
 At long last, after working through this long complex process, you are almost ready to publish your app on iTunes.
 
-[[setting-up-your-itunes-storefront]]
 == Setting up Your iTunes Storefront
 
 There are just a few steps remaining.
