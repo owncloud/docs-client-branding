@@ -1,0 +1,31 @@
+site:
+  title: ownCloud Branded Clients Documentation
+  url: https://doc.owncloud.com
+
+content:
+  sources:
+  - url: .
+    branches:
+    - HEAD
+
+ui:
+  output_dir: assets
+  bundle:
+    snapshot: true
+    url: https://minio.owncloud.com/documentation/ui-bundle.zip
+
+output:
+  clean: true
+  dir: public
+
+asciidoc:
+  attributes:
+    idprefix: ''
+    idseparator: '-'
+    experimental: ''
+    latest-branded-version: 1.1
+    previous-branded-version: 1.0
+  extensions:
+    - ./lib/extensions/tabs.js
+    - ./lib/extensions/remote-include-processor.js
+    - ./node_modules/asciidoctor-kroki/src/asciidoctor-kroki.js

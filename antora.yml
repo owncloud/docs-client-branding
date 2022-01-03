@@ -1,0 +1,12 @@
+name: branded_clients
+title: Branded Clients
+version: 'next'
+start_page: ROOT:index.adoc
+nav:
+- modules/ROOT/nav.adoc
+- modules/branded_android_app/nav.adoc
+- modules/branded_ios_app/nav.adoc
+- modules/branded_desktop_client/nav.adoc
+
+asciidoc:
+  attributes:
