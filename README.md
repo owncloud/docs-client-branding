@@ -46,6 +46,6 @@ See the the [following section](https://github.com/owncloud/docs#target-branch-a
 
 Please refer to the [Branching Workflow for the Branded Clients](https://github.com/owncloud/docs-client-branding/blob/master/docs/the-branching-workflow.md) or more information.
 
-## Create a New Version Branch for the Desktop Client
+## Create a New Version Branch for the Branding Documentation
 
 Please refer to [Create a New Version Branch for the Branded Clients](https://github.com/owncloud/docs-client-branding/blob/master/docs/new-version-branch.md) for more information.
