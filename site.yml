@@ -23,8 +23,8 @@ asciidoc:
     idprefix: ''
     idseparator: '-'
     experimental: ''
-    latest-branded-version: next
-    previous-branded-version: next
+    latest-branded-version: 'next'
+    previous-branded-version: 'next'
   extensions:
     - ./lib/extensions/tabs.js
     - ./lib/extensions/remote-include-processor.js
