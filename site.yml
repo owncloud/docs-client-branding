@@ -2,6 +2,7 @@
 site:
   title: ownCloud Branded Clients Documentation
   url: https://doc.owncloud.com
+  start_page: branded_clients::index.adoc
 
 content:
   sources:
