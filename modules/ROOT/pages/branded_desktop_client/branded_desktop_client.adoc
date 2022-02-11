@@ -12,6 +12,6 @@ Then go to the _Desktop client section_ of ownBrander, which has two sections, _
 
 image:branded_desktop_app/ownbrander-2.png[ownBrander screen for desktop client.]
 
-Work your way through the wizard, enter required elements and any optional elements you wish. When you have completed the wizard, press the btn:[Generate Desktop Client] button. You will either get messages warning of any items that need to be corrected, or a success message:
+Work your way through the wizard, enter required elements and any optional elements you wish. When you have completed the wizard, press the btn:[Generate Desktop Client] button. You will either get messages warning of any items that need to be corrected, or a success message.
 
 It takes 24-48 hours to build your client. When finalized you will see it in your account on https://customer.owncloud.com/owncloud[customer.owncloud.com].

@@ -2,7 +2,7 @@
 
 == Introduction
 
-As an ownBrander user, you can enable the build of branded Linux in the “Desktop” section of their account. You can download a `*.tar` file which contains everything to set up complete self-hosted Linux repositories
+As an ownBrander user, you can enable the build of branded Linux in the “Desktop” section of your account. You can download a `*.tar` file which contains everything to set up complete self-hosted Linux repositories
 for the selected Linux distributions.
 
 == Setup
@@ -85,7 +85,7 @@ mycloud-2.0.2.450-linux
 └── …
 ----
 
-The download folder provides detailed instructions for your users at `download/index.html` how to install the branded Linux clients on the selected Linux distributions. All location information in the HTML files is set to `download.example.com`. All metadata in the repo is set to `download.example.com` too.
+The download folder provides detailed instructions for your users at `download/index.html` about how to install the branded Linux clients on the selected Linux distributions. All location information in the HTML files is set to `download.example.com`. All metadata in the repo is set to `download.example.com` too.
 
 The download folder contains a shell script (`/download/example.sh`). This allows you to modify the HTML and the repo itself according to your repo location on your webserver.
 
@@ -115,7 +115,7 @@ Replace `\http://download.example.com/repo` in the above example with the base U
 
 Then execute the script and check `download/index.html` on your webserver.
 
-The ownBrander build system can be configured to include the custom repo URL information in the `*.tar` file. Currently, this parameter isn’t available in the ownBrander web UI, but the ownCloud support (support@owncloud.com) can add this information to your ownBrander account.
+The ownBrander build system can be configured to include the custom repo URL information in the `*.tar` file. Currently, this parameter isn’t available in the ownBrander web UI, but the ownCloud support team (support@owncloud.com) can add this information to your ownBrander account.
 
 
 
