@@ -11,42 +11,33 @@ This is the content of `mycloud-2.0.2.450-linux.tar`:
 
 [source,text]
 ----
-mycloud-2.0.2.450-linux
-├── Fedora_20
-│   ├── my.repo
-│   ├── repocache
-│   ├── repodata
-│   │   ├── 893c197dfe8… …af4feaa87-filelists.xml.gz
-│   │   ├── 8cc4ccf1113… …62c8e1284-primary.xml.gz
-│   │   ├── 9473f469df6… …55a450060-other.xml.gz
-│   │   ├── repomd.xml
-│   │   ├── repomd.xml.asc
-│   │   └── repomd.xml.key
-│   ├── src
-│   │   ├── libqt5keychain-0.5-1.1.src.rpm
-│   │   ├── libqtkeychain-0.5-4.1.src.rpm
-│   │   └── mycloud-client-2.0.2-1.2.src.rpm
-│   └── x86_64
-│   ├── libmycloudsync-devel-2.0.2-1.2.x86_64.rpm
-│   ├── libmycloudsync0-2.0.2-1.2.x86_64.rpm
-│   ├── libqt5keychain-devel-0.5-1.1.x86_64.rpm
-│   ├── libqt5keychain0-0.5-1.1.x86_64.rpm
-│   ├── libqtkeychain-devel-0.5-4.1.x86_64.rpm
-│   ├── libqtkeychain0-0.5-4.1.x86_64.rpm
-│   ├── mycloud-client-2.0.2-1.2.x86_64.rpm
-│   ├── mycloud-client-doc-2.0.2-1.2.x86_64.rpm
-│   ├── mycloud-client-l10n-2.0.2-1.2.x86_64.rpm
-│   └── mycloud-client-nautilus-2.0.2-1.2.x86_64.rpm
-├── Fedora_21
+mycloud-2.10.0.6752-linux
+├── CentOS_7
 │   └── …
-├── Fedora_22
+├── Debian_10
 │   └── …
-├── Ubuntu_14.04
+├── Debian_11
 │   └── …
-├── Ubuntu_15.04
+├── Fedora_33
+│   └── …
+├── Fedora_34
+│   └── …
+├── Fedora_35
+│   └── …
+├── Ubuntu_18.04
+│   └── …
+├── Ubuntu_20.04
+│   └── …
+├── Ubuntu_21.04
+││   └── …
+├── Ubuntu_21.10
 │   └── …
 ├── download
+│   ├── CentOS.html
+│   ├── Debian.html
 │   ├── Fedora.html
+│   ├── Ubuntu.html
+│   ├── allplatforms.html
 │   ├── assets
 │   │   ├── application.css
 │   │   ├── application.js
@@ -65,24 +56,58 @@ mycloud-2.0.2.450-linux
 │   │   ├── sl.png
 │   │   ├── sle.png
 │   │   ├── ubuntu.png
+│   │   ├── univention.png
 │   │   ├── unknown.png
 │   │   └── ymp-added-repos.txt
 │   ├── bin
 │   │   └── repo-admin.py
+│   ├── download.json
 │   ├── example.sh
 │   ├── index.html
 │   ├── openSUSE.html
-│   ├── xUbuntu.html
 │   └── ymp
-│   ├── openSUSE_13.1
-│   │   └── mycloud-client.ymp
-│   ├── openSUSE_13.2
-│   │   └── mycloud-client.ymp
-│   └── openSUSE_ymp.html
-├── openSUSE_13.1
+│       ├── openSUSE_Leap_15.2
+│       │   └── mycloud-client.ymp
+│       ├── openSUSE_Leap_15.3
+│       │   └── mycloud-client.ymp
+│       └── openSUSE_ymp.html
+├── openSUSE_Leap_15.2
 │   └── …
-└── openSUSE_13.2
-└── …
+└── openSUSE_Leap_15.3
+    ├── INSTALL.sh
+    ├── PREINSTALL.sh
+    ├── libmycloudsync-devel-2.10.0-6752.x86_64.rpm
+    ├── ocqt51210-libQt5Concurrent5-5.12.10-lp153.15.1.x86_64.rpm
+    ├── ocqt51210-libQt5Core5-5.12.10-lp153.15.1.x86_64.rpm
+    ├── ocqt51210-libQt5DBus5-5.12.10-lp153.15.1.x86_64.rpm
+    ├── ocqt51210-libQt5Gui5-5.12.10-lp153.15.1.x86_64.rpm
+    ├── ocqt51210-libQt5Network5-5.12.10-lp153.15.1.x86_64.rpm
+    ├── ocqt51210-libQt5PrintSupport5-5.12.10-lp153.15.1.x86_64.rpm
+    ├── ocqt51210-libQt5Sql5-5.12.10-lp153.15.1.x86_64.rpm
+    ├── ocqt51210-libQt5Widgets5-5.12.10-lp153.15.1.x86_64.rpm
+    ├── ocqt51210-libQt5Xml5-5.12.10-lp153.15.1.x86_64.rpm
+    ├── ocqt51210-libqt5-qtsvg-5.12.10-lp153.2.1.x86_64.rpm
+    ├── ocqt51210-libqt5-qttranslations-5.12.10-lp153.2.1.x86_64.rpm
+    ├── ocqt51210-libqt5-qtwayland-5.12.10-lp153.18.1.x86_64.rpm
+    ├── ocqt51210-qt5keychain1-0.12.0-lp153.3.1.x86_64.rpm
+    ├── repodata
+    │   ├── 3087af5cd89a88977dc9d04e5a3724c573b5b1da3da26bf39931c35f30f00b04-primary.xml.gz
+    │   ├── c0ee1520c439b5272490d193ceb9a31230b9cb7de16dd88565e1c8f6218f006b-other.xml.gz
+    │   ├── da70c01f9d56865f5792e19529fe3b5cdbd5dd94162fbd3e117577ead7a422cf-filelists.xml.gz
+    │   ├── repomd.xml
+    │   ├── repomd.xml.asc
+    │   └── repomd.xml.key
+    ├── mycloud-client-2.10.0-6752.x86_64.rpm
+    ├── mycloud-client-doc-2.10.0-6752.x86_64.rpm
+    ├── mycloud-client-dolphin-2.10.0-6752.x86_64.rpm
+    ├── mycloud-client-nautilus-2.10.0-6752.x86_64.rpm
+    ├── mycloud-client-nemo-2.10.0-6752.x86_64.rpm
+    ├── mycloud-client-overlays-icons-2.10.0-6752.x86_64.rpm
+    ├── mycloud-client.ymp
+    ├── mycloud.repo
+    └── src
+        ├── mycloud-client-2.10.0-6752.src.rpm
+        └── mycloud-client-overlays-2.10.0-6752.src.rpm
 ----
 
 The download folder provides detailed instructions for your users at `download/index.html` about how to install the branded Linux clients on the selected Linux distributions. All location information in the HTML files is set to `download.example.com`. All metadata in the repo is set to `download.example.com` too.
@@ -114,8 +139,3 @@ python bin/repo-admin.py \
 Replace `\http://download.example.com/repo` in the above example with the base URL of your repository and save the file with a new name. (`download/mycloud.sh`)
 
 Then execute the script and check `download/index.html` on your webserver.
-
-The ownBrander build system can be configured to include the custom repo URL information in the `*.tar` file. Currently, this parameter isn’t available in the ownBrander web UI, but the ownCloud support team (support@owncloud.com) can add this information to your ownBrander account.
-
-
-
