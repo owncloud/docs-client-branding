@@ -2,6 +2,7 @@
 * Building a Branded Desktop Sync Client
 ** xref:branded_desktop_client/branded_desktop_client.adoc[Building a Branded Desktop Sync Client]
 ** xref:branded_desktop_client/update_branded_desktop_clients.adoc[Update Your Branded Desktop Clients]
+** xref:branded_desktop_client/branded_linux_desktop_clients.adoc[Deploy And Update Branded Linux Desktop Clients]
 * Building Branded Android Apps
 ** xref:branded_android_app/building_branded_android_client.adoc[Building Your App With ownBrander]
 ** xref:branded_android_app/publishing_android_app.adoc[Distributing Your Branded Android App]
