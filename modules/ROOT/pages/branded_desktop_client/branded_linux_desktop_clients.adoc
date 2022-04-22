@@ -7,7 +7,7 @@ for the selected Linux distributions.
 
 == Setup
 
-This is the content of `mycloud-2.0.2.450-linux.tar`:
+This is the content of `mycloud-2.10.0.6752-linux.tar`:
 
 [source,text]
 ----
