@@ -72,7 +72,7 @@ sudo yum install maven-jarsigner-plugin.noarch
 
 Mac OS X and Windows users can download the Oracle JDK from http://www.oracle.com/technetwork/java/javase/downloads/index.html[Oracle’s Java Download] page.
 
-If your operating system provides the `zipalign` package you can install it like:
+If your operating system provides the `zipalign` package, you can install it with:
 
 [source,bash]
 ----
