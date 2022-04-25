@@ -43,8 +43,8 @@ The first one supplies `keytool` and the second one supplies `jarsigner`:
 
 [source,bash]
 ----
-sudo apt-get install openjdk-7-jre-headless
-sudo apt-get install openjdk-7-jdk
+sudo apt-get install openjdk-8-jre-headless
+sudo apt-get install openjdk-8-jdk
 ----
 
 Plus some additional 32-bit packages:
@@ -52,7 +52,7 @@ Plus some additional 32-bit packages:
 [source,bash]
 ----
 sudo apt-get install libc6-i386 lib32stdc++6 \
-    lib32gcc1 lib32ncurses5 zlib1g:i386
+    lib32gcc1 lib32ncurses5-dev zlib1g:i386
 ----
 
 On SUSE systems, install this package:
@@ -72,7 +72,15 @@ sudo yum install maven-jarsigner-plugin.noarch
 
 Mac OS X and Windows users can download the Oracle JDK from http://www.oracle.com/technetwork/java/javase/downloads/index.html[Oracle’s Java Download] page.
 
-`zipalign` is included in the https://developer.android.com/sdk/index.html[Android Software Development Kit].
+If your operating system provides the `zipalign` package you can install it like:
+
+[source,bash]
+----
+sudo apt install zipalign
+----
+
+In case `zipalign` is not provided as installable package for your OS, you can download it from source
+via the https://developer.android.com/sdk/index.html[Android Software Development Kit].
 It is a large download, but once you have downloaded it you can copy the `zipalign` binary to any computer and use it.
 Go to https://developer.android.com/sdk/index.html[Android Software Development Kit] and click the "Download Android Studio" button.
 
