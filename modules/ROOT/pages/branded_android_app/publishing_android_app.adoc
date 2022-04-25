@@ -9,11 +9,11 @@ Signing your app verifies authorship and authenticity.
 
 When you create your branded Android app we supply you with two `.apk` files: one for debugging and testing, and one for deployment, like these examples:
 
-[source]
-....
+[source,plaintext]
+----
 acmecloud_2.0.0-debug.apk
 acmecloud_2.0.0-release-unsigned.apk
-....
+----
 
 The second `.apk` file, `acmecloud_2.0.0-release-unsigned.apk`, is the one you will sign and distribute.
 
@@ -41,34 +41,34 @@ Linux users can get these in OpenJDK.
 For example, on current versions of Debian, Mint, and Ubuntu Linux you need to install two packages.
 The first one supplies `keytool` and the second one supplies `jarsigner`:
 
-[source]
-....
-$ sudo apt-get install openjdk-7-jre-headless
-$ sudo apt-get install openjdk-7-jdk
-....
+[source,bash]
+----
+sudo apt-get install openjdk-7-jre-headless
+sudo apt-get install openjdk-7-jdk
+----
 
 Plus some additional 32-bit packages:
 
-[source]
-....
-$ sudo apt-get install libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5
-zlib1g:i386
-....
+[source,bash]
+----
+sudo apt-get install libc6-i386 lib32stdc++6 \
+    lib32gcc1 lib32ncurses5 zlib1g:i386
+----
 
 On SUSE systems, install this package:
 
-[source]
-....
-$ sudo zypper install java-1_7_0-openjdk-devel
-....
+[source,bash]
+----
+sudo zypper install java-1_7_0-openjdk-devel
+----
 
 It is simpler to get these on CentOS and Red Hat Enterprise Linux, as they have created some nice wrapper scripts around `keytool` and `jarsigner` that you can install standalone:
 
-[source]
-....
-$ sudo yum install keytool-maven-plugin.noarch
-$ sudo yum install maven-jarsigner-plugin.noarch
-....
+[source,bash]
+----
+sudo yum install keytool-maven-plugin.noarch
+sudo yum install maven-jarsigner-plugin.noarch
+----
 
 Mac OS X and Windows users can download the Oracle JDK from http://www.oracle.com/technetwork/java/javase/downloads/index.html[Oracle’s Java Download] page.
 
@@ -86,10 +86,10 @@ Unpack it and change to the unpacked directory, which is `android-sdk-linux` on 
 There is one more step, and that is to install additional tools.
 Run this command from the unpacked directory:
 
-[source]
-....
+[source,bash]
+----
 tools/android update sdk --no-ui
-....
+----
 
 This will take some time, as it is a large download.
 When it’s finished you’ll find `zipalign` in the `build-tools` directory.
@@ -104,10 +104,17 @@ To create your certificate copy the following command, replacing `acme-release-k
 The keystore name and alias must both have a password, which can be same for both.
 Then enter your company information as you are prompted:
 
-[source]
-....
-$ keytool -genkey -v -keystore acme-release-key.keystore -alias acme_key \
--keyalg RSA -keysize 2048 -validity 10000
+[source,bash]
+----
+keytool -genkey -v \
+   -keystore acme-release-key.keystore \
+   -alias acme_key \
+   -keyalg RSA -keysize 2048 \
+   -validity 10000
+----
+
+[source,plaintext,options="nowrap"]
+----
 Enter keystore password:
 Re-enter new password:
 What is your first and last name?
@@ -122,26 +129,31 @@ What is the name of your State or Province?
  [Unknown]:  CA
 What is the two-letter country code for this unit?
  [Unknown]:  US
-Is CN=Acme Boss, OU=Acme Headquarters, O="Acme, Inc.", L=Anytown, ST=CA, C=US
-correct?
+Is CN=Acme Boss, OU=Acme Headquarters, O="Acme, Inc.", L=Anytown, ST=CA, C=US correct?
  [no]:  yes
 
 Generating 2,048 bit RSA key pair and self-signed certificate (SHA256withRSA)
 with a validity of 10,000 days
-       for: CN=Acme Boss, OU=Acme Headquarters, O="Acme, Inc.", L=Anytown,
-       ST=CA, C=US
+       for: CN=Acme Boss, OU=Acme Headquarters, O="Acme, Inc.", L=Anytown, ST=CA, C=US
 Enter key password for <acme_key>
        (RETURN if same as keystore password):
 [Storing acme-release-key.keystore]
-....
+----
 
 Now use `jarsigner` to sign your app.
 Replace `acme-release-key.keystore` and `acme_key` with your own keystore name and alias:
 
-[source]
-....
-$ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore \
-acme-release-key.keystore acmecloud_1.7.0-release-unsigned.apk acme_key
+[source,bash]
+----
+jarsigner -verbose \
+    -sigalg SHA1withRSA \
+    -digestalg SHA1 \
+    -keystore acme-release-key.keystore \
+    acmecloud_1.7.0-release-unsigned.apk acme_key
+----
+
+[source,plaintext,options="nowrap"]
+----
 Enter Passphrase for keystore:
   adding: META-INF/MANIFEST.MF
   adding: META-INF/ACME_KEY.SF
@@ -153,47 +165,52 @@ Enter Passphrase for keystore:
 
  Warning:
  No -tsa or -tsacert is provided and this jar is not timestamped.
-Without a
- timestamp, users may not be able to validate this jar after the signer
- certificate's expiration date (2042-07-28) or after any future revocation
- date.
-....
+ Without a timestamp, users may not be able to validate this jar after the signer
+ certificate's expiration date (2042-07-28) or after any future revocation date.
+----
 
 You can ignore the warning at the end; you should see a `jar signed` message when it is finished.
 
 Now you can verify that your app is signed:
 
-[source]
-....
-$ jarsigner -verify -verbose -certs acmecloud_1.7.0-release-unsigned.apk
+[source,bash]
+----
+jarsigner -verify -verbose -certs acmecloud_1.7.0-release-unsigned.apk
+----
 
-     sm       943 Thu Mar 12 12:47:56 PDT 2015
-     res/drawable-mdpi/abs__dialog_full_holo_light.9.png
+[source,plaintext,options="nowrap"]
+----
+sm       943 Thu Mar 12 12:47:56 PDT 2015
+res/drawable-mdpi/abs__dialog_full_holo_light.9.png
 
-     X.509, CN=Acme Boss, OU=Acme Headquarters, O="Acme, Inc.", L=Anytown,
-     ST=CA, C=US
-....
+X.509, CN=Acme Boss, OU=Acme Headquarters, O="Acme, Inc.", L=Anytown, ST=CA, C=US
+----
 
 This will spit out hundreds of lines of output.
 If it ends with the following it’s good:
 
-[source]
-....
+[source,plaintext]
+----
+...
 s = signature was verified
 m = entry is listed in manifest
 k = at least one certificate was found in keystore
 i = at least one certificate was found in identity scope
 
 jar verified.
-....
+----
 
 The last step for preparing your `.apk` for release is to run `zipalign` on it. `zipalign` optimizes your file to use less memory.
 You must specify both an input and an output file, so this is good time to give your app a shorter name, and it should not say "unsigned".
 Our example file will be renamed to `acmecloud_1.7.0.apk`:
 
-[source]
-....
-$ zipalign -v 4 acmecloud_1.7.0-release-unsigned.apk acmecloud_1.7.0.apk
+[source,bash]
+----
+zipalign -v 4 acmecloud_1.7.0-release-unsigned.apk acmecloud_1.7.0.apk
+----
+
+[source,plaintext,options="nowrap"]
+----
 Verifying alignment of acmecloud_1.7.0.apk (4)...
      50 META-INF/MANIFEST.MF (OK - compressed)
   13277 META-INF/ACME_KEY.SF (OK - compressed)
@@ -201,7 +218,7 @@ Verifying alignment of acmecloud_1.7.0.apk (4)...
   28206 res/anim/disappear.xml (OK - compressed)
   [..]
   Verification succesful
-....
+----
 
 Again, this emits a lot of output, and when you see *Verification succesful* at the end you know it succeeded, and it is ready to distribute.
 
@@ -333,7 +350,7 @@ image:branded_android_app/android_custom_25.png[image]
 You may configure the URLs to your own download repositories for your ownCloud desktop clients and mobile apps in config/config.php.
 This example shows the default download locations:
 
-[source,sourceCode,php]
+[source,php]
 ----
 <?php
 
@@ -348,17 +365,17 @@ Simply replace the URLs with the links to your own preferred download repos.
 
 You may test alternate URLs without editing config/config.php by setting a test URL as an environment variable:
 
-[source]
-....
+[source,bash]
+----
 export OCC_UPDATE_URL=https://test.example.com
-....
+----
 
 When you’re finished testing you can disable the environment variable:
 
-[source]
-....
+[source,bash]
+----
 unset OCC_UPDATE_URL
-....
+----
 
 === Publishing a Paid App in Google Play
 
