@@ -34,8 +34,8 @@
     "linkcheck": "broken-link-checker --filter-level 3 --recursive --verbose"
   },
   "dependencies": {
-    "@antora/cli": "^2.3",
-    "@antora/site-generator-default": "^2.3",
+    "@antora/cli": "^3.1",
+    "@antora/site-generator-default": "^3.1",
     "@asciidoctor/core": "^2.2.6",
     "@elastic/elasticsearch": "^7.16.0",
     "asciidoctor-kroki": "^0.15.4",
