@@ -133,6 +133,6 @@ repo=http://download.example.com/repo
 python3 bin/repo-admin.py --url $repo -d 'download' -p '.*-client' -i 'index.html' -f ..
 ----
 
-Replace `\http://download.example.com/repo` in the above example with the base URL of your repository and save the file.
+Replace `\http://download.example.com/repo` in the above example with the base URL of your repository (ending in `.../mycloud-2.10.0.6752-linux/` here) and save the file.
 
 Then execute the script and check `download/index.html` on your webserver.
