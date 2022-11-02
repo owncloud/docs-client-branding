@@ -118,24 +118,21 @@ download/example.sh:::
 +
 [source,bash]
 ----
-#! /bin/bash
+#! /bin/sh
 #
 # This example demonstrates how to call repo-admin.py
-# You will need to call repo-admin.py with your download url.
-# Basic auth username and password is supported as shown below.
+# You will need to call repo-admin.py with your download url if the url shown below differs.
+# Basic auth username and password is supported in the url.
 #
 # You can customitze the main html file and re-run repo-admin.py later.
+# For a server without https support use --insecure --url http://...
 #
-cd $(dirname $0)
-set -x
-python bin/repo-admin.py \
-  --url http://download.example.com/repo \
-  -d 'download' \
-  -p '.*-client' \
-  -i 'index.html' \
-  -f ..
+cd "$(dirname "${0}")"
+set -eux
+repo=http://download.example.com/repo
+python3 bin/repo-admin.py --url $repo -d 'download' -p '.*-client' -i 'index.html' -f ..
 ----
 
-Replace `\http://download.example.com/repo` in the above example with the base URL of your repository and save the file with a new name. (`download/mycloud.sh`)
+Replace `\http://download.example.com/repo` in the above example with the base URL of your repository (ending in `.../mycloud-2.10.0.6752-linux/` here) and save the file.
 
 Then execute the script and check `download/index.html` on your webserver.
