@@ -141,7 +141,10 @@ python3 bin/repo-admin.py  "${opt[@]}" -d 'download' -p '.*-client' -i 'index.ht
 
 The url after unpacking is an internal minio url, or a non working example like `\http://download.example.com/repo`.
 You must change example.sh before it can be run.
-* Either replace the url with the correct url leading to the exact filder in which the archive was unpacked (ending in `.../mycloud-2.10.0.6752-linux/` here).
+
+* Either
+   - replace the url with the correct url leading to the exact filder in which the archive was unpacked +
+     (ending in `.../mycloud-2.10.0.6752-linux/` here).
 * Or 
    - Delete (or comment out) the line containing the url.
    - Make sure there is a `.repo-admin-prefix` file in the parent folder of the unpacked archive (here next to `mycloud-2.10.0.6752-linux`)
@@ -150,3 +153,5 @@ You must change example.sh before it can be run.
    - `echo "http://cloud.example.com/install/" > .repo-admin-prefix` # this needs to be done only once.
 
 Then execute the script with `bash example.sh` and check the `.../download/index.html` that is printed.
+
+Notice: When the URL starts with `http://` then the `--insecure` option is implicit and need not be specified.
