@@ -1,9 +1,10 @@
 = Deploy And Update Branded Linux Desktop Clients
 
+:description: As an ownBrander user, you can enable the build of branded Linux in the “Desktop” section of your ownCloud account.
+
 == Introduction
 
-As an ownBrander user, you can enable the build of branded Linux in the “Desktop” section of your account. You can download a `*.tar` file which contains everything to set up complete self-hosted Linux repositories
-for the selected Linux distributions.
+{description} You can download a `*.tar` file which contains everything to set up complete self-hosted Linux repositories for the selected Linux distributions.
 
 == Setup
 
@@ -149,10 +150,13 @@ You must change example.sh before it can be run.
    - Delete (or comment out) the line containing the url.
    - Make sure there is a `.repo-admin-prefix` file in the parent folder of the unpacked archive (here next to `mycloud-2.10.0.6752-linux`)
    - Its contents is the base URL leading up to this parent folder. +
-     E.g. if the correct --url parameter were `http://cloud.example.com/install/mycloud-2.10.0.6752-linux/` +
+     Example: if the correct `--url` parameter is: +
+     `\http://cloud.example.com/install/mycloud-2.10.0.6752-linux/` +
      then the prefix file can be created like this:
-   - `cd ...` # go to the parent folder of the unpacked archive.
-   - `echo "http://cloud.example.com/install" > .repo-admin-prefix` # this needs to be done only once.
+   - `cd ...` +
+     # go to the parent folder of the unpacked archive.
+   - `echo "http://cloud.example.com/install" > .repo-admin-prefix` +
+     # this needs to be done only once.
 
 Then execute the script with `bash example.sh` and check the `.../download/index.html` that is printed.
 
