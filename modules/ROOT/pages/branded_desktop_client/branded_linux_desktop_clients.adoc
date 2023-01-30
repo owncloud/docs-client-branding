@@ -144,18 +144,18 @@ The url after unpacking is an internal minio url, or a non working example like 
 You must change example.sh before it can be run.
 
 * Either
-   - replace the url with the correct url leading to the exact folder in which the archive was unpacked +
+** replace the url with the correct url leading to the exact folder in which the archive was unpacked +
      (ending in `.../mycloud-2.10.0.6752-linux/` here).
 * Or 
-   - Delete (or comment out) the line containing the url.
-   - Make sure there is a `.repo-admin-prefix` file in the parent folder of the unpacked archive (here next to `mycloud-2.10.0.6752-linux`)
-   - Its contents is the base URL leading up to this parent folder. +
+** Delete (or comment out) the line containing the url.
+** Make sure there is a `.repo-admin-prefix` file in the parent folder of the unpacked archive (here next to `mycloud-2.10.0.6752-linux`)
+** Its contents is the base URL leading up to this parent folder. +
      Example: if the correct `--url` parameter is: +
      `\http://cloud.example.com/install/mycloud-2.10.0.6752-linux/` +
      then the prefix file can be created like this:
-   - `cd ...` +
+*** `cd ...` +
      # go to the parent folder of the unpacked archive.
-   - `echo "http://cloud.example.com/install" > .repo-admin-prefix` +
+*** `echo "http://cloud.example.com/install" > .repo-admin-prefix` +
      # this needs to be done only once.
 
 Then execute the script with `bash example.sh` and check the `.../download/index.html` that is printed.
