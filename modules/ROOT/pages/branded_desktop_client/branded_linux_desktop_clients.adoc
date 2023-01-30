@@ -135,7 +135,7 @@ cd "$(dirname "${0}")"
 opt=()
 
 # if a .repo-admin-prefix file is found in a parent directory, --url can be omitted
-opt+=("--url" "https://minio.owncloud.services/clients/build-linux/7270/repo/")
+opt+=("--url" "http://download.example.com/repo")
 
 python3 bin/repo-admin.py  "${opt[@]}" -d 'download' -p '.*-client' -i 'index.html' -f ..
 ----
