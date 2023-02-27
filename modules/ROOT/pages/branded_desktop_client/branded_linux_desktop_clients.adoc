@@ -1,9 +1,10 @@
 = Deploy And Update Branded Linux Desktop Clients
 
+:description: As an ownBrander user, you can enable the build of branded Linux in the “Desktop” section of your ownCloud account.
+
 == Introduction
 
-As an ownBrander user, you can enable the build of branded Linux in the “Desktop” section of your account. You can download a `*.tar` file which contains everything to set up complete self-hosted Linux repositories
-for the selected Linux distributions.
+{description} You can download a `*.tar` file which contains everything to set up complete self-hosted Linux repositories for the selected Linux distributions.
 
 == Setup
 
@@ -127,12 +128,36 @@ download/example.sh:::
 # You can customitze the main html file and re-run repo-admin.py later.
 # For a server without https support use --insecure --url http://...
 #
+set -euxo pipefail
+
 cd "$(dirname "${0}")"
-set -eux
-repo=http://download.example.com/repo
-python3 bin/repo-admin.py --url $repo -d 'download' -p '.*-client' -i 'index.html' -f ..
+
+opt=()
+
+# if a .repo-admin-prefix file is found in a parent directory, --url can be omitted
+opt+=("--url" "http://download.example.com/repo")
+
+python3 bin/repo-admin.py  "${opt[@]}" -d 'download' -p '.*-client' -i 'index.html' -f ..
 ----
 
-Replace `\http://download.example.com/repo` in the above example with the base URL of your repository (ending in `.../mycloud-2.10.0.6752-linux/` here) and save the file.
+The url after unpacking is an invalid url.
+You must change example.sh before it can be run.
 
-Then execute the script and check `download/index.html` on your webserver.
+* Either
+** replace the url with the correct url leading to the exact folder in which the archive was unpacked +
+     (ending in `.../mycloud-2.10.0.6752-linux/` here).
+* Or 
+** Delete (or comment out) the line containing the url.
+** Make sure there is a `.repo-admin-prefix` file in the parent folder of the unpacked archive (here next to `mycloud-2.10.0.6752-linux`)
+** Its contents is the base URL leading up to this parent folder. +
+     Example: if the correct `--url` parameter is: +
+     `\http://cloud.example.com/install/mycloud-2.10.0.6752-linux/` +
+     then the prefix file can be created like this:
+*** `cd ...` +
+     # go to the parent folder of the unpacked archive.
+*** `echo "http://cloud.example.com/install" > .repo-admin-prefix` +
+     # this needs to be done only once.
+
+Then execute the script with `bash example.sh` and check the `.../download/index.html` that is printed.
+
+Notice: When the URL starts with `http://` then the `--insecure` option is implicit and need not be specified.
