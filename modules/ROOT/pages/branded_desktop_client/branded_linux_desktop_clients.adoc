@@ -140,7 +140,7 @@ opt+=("--url" "http://download.example.com/repo")
 python3 bin/repo-admin.py  "${opt[@]}" -d 'download' -p '.*-client' -i 'index.html' -f ..
 ----
 
-The url after unpacking is an internal minio url, or a non working example like `\http://download.example.com/repo`.
+The url after unpacking is an invalid url.
 You must change example.sh before it can be run.
 
 * Either
