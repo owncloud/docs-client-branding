@@ -2,7 +2,7 @@
 :experimental:
 
 Start by creating a .certSigningRequest (CSR) file on your Mac, using Keychain Access.
-Open Finder, and then open Keychain Access from the Utilities folder.
+Open the Launchpad and type "Keychain" in the search.
 
 image:branded_ios_app/mac-1.png[image]
 
@@ -40,34 +40,28 @@ Check btn:[Allow all applications to access this item].
 image:branded_ios_app/mac-8.png[image]
 
 Now login to the *Member Center* on https://developer.apple.com/.
-Click btn:[Certificates, Identifiers & Profiles].
+Click *Accounts* then you have to click on *Certificates*.
 
 image:branded_ios_app/cert-1.png[image]
 
-Then click *iOS Apps > Certificates*.
+Next, click the *add* button (the little plus sign) or btn:[Create a certificate]
 
 image:branded_ios_app/cert-2.png[image]
 
-Next, click the btn:[add] button (the little plus sign) in the top right corner of the *iOS Certificate* page.
+Next choose the btn:[iOS Distribution (App Store and Ad Hoc)]
 
 image:branded_ios_app/cert-3.png[image]
 
-Under "What type of certificate do you need?" check btn:[App Store and Ad Hoc], then click the btn:[Continue] button at the bottom of the page.
+Click btn:[Choose File] button and select your previously created CSR, in this example your *iosapp.certSigningRequest*. Press btn:[Continue]
 
 image:branded_ios_app/cert-4.png[image]
 
-The next screen, *About Creating a Certificate Signing Request (CSR)* has information about creating a CSR in Keychain Access.
-You already did this, so go to the next screen. "Add iOS Certificate", to upload the CSR you already created, then click the btn:[Generate] button.
+Your new certificate has been created. Press btn:[Download] to download it to your Mac.
 
 image:branded_ios_app/cert-5.png[image]
 
-Your new certificate is named *ios_distribution.cer*.
-Download it to your Mac; then find it and double-click on it to install it properly in Keychain.
+Your certificate can be found in Downloads under the name of *ios_distribution.cer*
 
 image:branded_ios_app/cert-6.png[image]
-
-After installing it, you should see it stored with its corresponding private key in Keychain.
-
-image:branded_ios_app/cert-7.png[image]
 
 Remember to make backups of your keys and certificates and keep them in a safe place.
