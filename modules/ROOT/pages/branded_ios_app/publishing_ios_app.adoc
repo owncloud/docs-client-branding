@@ -9,7 +9,7 @@ Follow these instructions exactly and in order, and you will have a nice branded
 
 == Prerequisites
 
-* A Mac OS X computer with Xcode (free download) and Keychain Access (included in Utilities).
+* A macOS computer with Xcode (free download) and Keychain Access (included in Utilities).
 This computer is essential to the entire process and will be linked to to your iOS Developer account.
 You will use it create and store distribution certificates, and to upload your app to iTunes Connect.
 * An iOS developer account on https://developer.apple.com/ios/[developer.apple.com/ios], which costs $99 per year.

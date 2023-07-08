@@ -5,7 +5,7 @@
 
 The Client Updater Server provides a Web service that will tell an ownCloud Desktop sync client whether or not an update is available. If an update is available, it will also provide metadata for the update, such as the Download URL, signatures or a fallback URL that the client can resort to in case the update goes wrong.
 
-Clients for Mac OS X and Windows will update themselves automatically. Linux clients will not. You have two options for your Linux users:
+Clients for macOS and Windows will update themselves automatically. Linux clients will not. You have two options for your Linux users:
 
 * Set up your own download repository so your Linux users can update your branded clients with their package managers when they receive an update notification.
 * Upload new versions of your branded client to your Web server. Your Linux users receive update notifications, then download and install the client manually.
@@ -22,7 +22,7 @@ There are times when you may want to disable update notifications. See the examp
 3.  Upload branded clients to your Web server.
 * Windows example: +
   `\https://mycloud.example.com/install/mycloud-2.1.1.240-setup.exe`
-* Mac OS X examples: +
+* macOS examples: +
   `\https://mycloud.example.com/install/mycloud-2.1.1.787.pkg` +
   `\https://mycloud.example.com/install/mycloud-2.1.1.787.pkg.tbz` +
   `\https://mycloud.example.com/install/mycloud-2.1.1.787.pkg.tbz.sig`
@@ -130,7 +130,7 @@ Human-readable Web site with links to your new client files.
 * `'downloadUrl'` +
 Full URL to download the *.exe file. http**s** needed.
 
-=== Mac OS X
+=== macOS
 
 * `currentVersion'` +
 Exact version of the new client, including the build number.
@@ -141,9 +141,9 @@ Full URL to download the *.pkg**.tbz** file. http**s** needed.
 * `'pubDate'` +
 Currently not used.
 * `'signature'` +
-Content of `mycloud-2.1.1.787.pkg.tbz.sig`, adds some extra security to the Mac OS X updater.
+Content of `mycloud-2.1.1.787.pkg.tbz.sig`, adds some extra security to the macOS updater.
 * `'minimumSystemVersion'` +
-Minimum required Mac OS X version according to https://owncloud.com/desktop-app/
+Minimum required macOS version according to https://owncloud.com/desktop-app/
 
 === Linux
 
@@ -183,9 +183,9 @@ The output should look like this if you call the URL manually:
    </owncloudclient>
 ----
 
-=== Mac OS X
+=== macOS
 
-This a example URL of a 2.1.1 client for Mac OS X:
+This a example URL of a 2.1.1 client for macOS:
 
 `\https://mycloud.example.com/updates/?version=2.1.1.687&platform=macos&oem=mycloud&sparkle=true`
 
