@@ -1,0 +1,170 @@
+= Updating Your Branded Android App
+:toc: right
+:description: Follow the procedure and notes when updating your branded Android App.
+
+== Introduction
+
+{description}
+
+IMPORTANT: Since August 2021, Google Play requires the Android App Bundle format (.aab) for publishing new apps. For more details see: https://developer.android.com/guide/app-bundle[About Android App Bundles]. With this change, the APK has been replaced as the standard publishing format.
+
+== General Information
+
+ownBrander generates 3 artifacts with every build:
+
+[width="100%",cols="30%,100%",options="header"]
+|===
+| Artifact Type
+| Notes
+
+| `*-release.aab`
+| Android App Bundle for Play Store distribution after August 2021
+
+| `*-release.apk`
+| Needs signing. Use for distribution methods other than Play Store
+
+| `*-debug.apk`
+| Install directly to your device for debugging purposes
+|===
+
+For the Android App Bundles, Play App Signing is required. For more details see: https://android-developers.googleblog.com/2021/06/the-future-of-android-app-bundles-is.html[The future of Android App Bundles is here]. Play App Signing is a safety feature provided by Google. Every new release will automatically be signed by Google. With this, apps no longer need to be signed locally.
+
+Navigate to the https://play.google.com/console/about/[Google Play Console] page and click on the btn:[Play Console] button.
+
+You will then land on the https://play.google.com/console/developers[Google Play Developer Account] sign-on page. After successful log-on, choose the appropriate developers account.
+
+image::android_app/updating/android_play_developer.png[Google Play Developer Account, width=450]
+
+The page should appear like this. Choose the designated app, which is to be signed and/or updated.
+
+image::android_app/updating/android_play_main.png[Google Play Developer Main View, width=450]
+
+== Create a New Release and Activate App Integrity
+
+Navigate to and click btn:[Production]
+
+image::android_app/updating/android_play_production.png[Google Play Console Production, width=250]
+
+and continue by clicking the btn:[Create new release] button.
+
+image::android_app/updating/android_play_new_release.png[Google Play Console New Release, width=450]
+
+Google Play Console will guide you through this. Follow the steps to validate your app-integrity.
+Click the btn:[Activate] button.
+
+image::android_app/updating/android_play_app_integrity.png[Google Play Console App Integrity, width=450]
+
+Since this is a new release version candidate, and the key comes from the Java KeyStore, choose this option. 
+Otherwise, choose according to your existing key scheme.
+
+image::android_app/updating/android_play_app_signing.png[Google Play Console App Signing, width=450]
+
+Follow the instructions pertaining to the chosen key scheme, here: JavaKeyStore. Download the PEPK-Tool as instructed.
+
+image::android_app/updating/android_play_activate_signing.png[Google Play Console App Activate Signing, width=450]
+
+Gather your keystore parameters:
+
+* KeyStore Alias
+* Key Store Password
+* Key Alias Password
+
+These are the parameters you previously used to sign your app. Perhaps you kept them stored in the ownBrander.
+
+Input the command below into an open terminal window. As seen in the screen after the command, you can click on the copy to clipboard icon (Step 2) to copy the entire command block, but you must modify the "foo" parts of the command as follows:
+
+* `foo.keystore` must be replaced by the `keystore name`, here: damken
+* `Alias` is the `app name`, here: damkencloud, aka the `Key Alias`.
+
+[source,java]
+----
+java -jar pepk.jar --keystore=foo.keystore --alias=foo --output=encrypted_private_key_path
+----
+
+image::android_app/updating/android_play_keystore.png[Google Play Console KeyStore, width=450]
+
+After executing the above command, you will be prompted to enter both your *KeyStore Password* and then your *Key Alias Password*. Keep in mind that these passwords remain invisible while you type them. Note that multiple entries or typos lead to errors.
+
+You can also check your signing parameters in ownBrander, if you have uploaded them for previous versions.
+
+image::android_app/updating/android_play_keystore_password.png[Google Play Console KeyStore Password, width=500]
+
+If you download the PEPK tool on macOS, you'll need additional permissions in the macOS menu:Security & Privacy[] settings:
+
+image::android_app/updating/android_play_sec_priv.png[Google Play Console Security & Privacy width=450]
+
+Proceed by clicking on the button to upload your private key.
+
+image::android_app/updating/android_play_upload_priv_key.png[Google Play Console Upload Private Key]
+
+Double-click the file to upload it. After a successful upload, click on the btn:[Save] button (bottom right of the page).
+
+The following is a depiction of the upload file.
+
+image::android_app/updating/android_play_upload_file.png[Google Play Console Upload File]
+
+You will be redirected to the menu:Terms of Use[] page. Click btn:[Accept] after reading them.
+
+Navigate back to menu:Production[]. The certificate is now displayed.
+
+image::android_app/updating/android_play_certificate_shown.png[Google Play Console Certificate Shown, width=450]
+
+In the *Production* bar move to the menu:Release review[] button.
+
+image::android_app/updating/android_play_release_review.png[Google Play Console Release Review, width=450]
+
+Notice the check-mark by the btn:[App Integrity] field.
+
+image::android_app/updating/android_play_app_integrity_ok.png[Google Play Console App Integrity OK, width=450]
+
+== Upload the Android App Bundle
+
+Proceed by clicking on btn:[Upload] in order to upload the `*-release.aab` file you previously downloaded from your shared account from your personal folder on {customer-owncloud-url}[customer.owncloud.com].
+
+image::android_app/updating/android_play_app_upload_name.png[Google Play Console App Upload Name]
+
+image::android_app/updating/android_play_app_upload.png[Google Play Console App Upload, width=450]
+
+You should see Google's colors changing during the upload process, then a preview of the app release candidate.
+
+image::android_app/updating/android_play_app_upload_preview.png[Google Play Console App Upload Preview, width=450]
+
+The new version is available and should be thoroughly examined before releasing it to the production environment.
+
+image::android_app/updating/android_play_app_upload_overview.png[Google Play Console App Upload Overview, width=450]
+
+Optionally, you may choose to provide your users with information regarding the change log so they know which changes have been implemented.
+
+image::android_app/updating/android_play_app_changelog.png[Google Play Console App Changelog]
+
+If available from a previous release, just copy it.
+
+image::android_app/updating/android_play_app_copy_changelog.png[Google Play Console Copy Changelog, width=450]
+
+After saving any modifications, proceed by clicking the btn:[Check release] button.
+
+image::android_app/updating/android_play_check_release.png[Google Play Console Check Release, width=450]
+
+You may see some warning signs. If of importance, check to see in what regards they are. Scroll down.
+
+image::android_app/updating/android_play_warnings.png[Google Play Console Warnings, width=450]
+
+If you opt for a complete roll-out in all of the chosen distribution countries, just click the btn:[Begin Production Release] button.
+
+image::android_app/updating/android_play_begin_production.png[Google Play Console Begin Production, width=450]
+
+Review the chosen distibution and hit the btn:[Release] button.
+
+image::android_app/updating/android_play_releasing.png[Google Play Console Releasing]
+
+Thereafter, you will receive a release status notification.
+
+image::android_app/updating/android_play_release_notification.png[Google Play Console Releaase Notification, width=450]
+
+Notice, that Play App Signing has been successfully implemented.
+
+image::android_app/updating/android_play_signing_successful.png[Google Play Console Signing Successful, width=450]
+
+Afterwards, you can find the status of your release/update release candidate in the tab *Release-Overview* or *Release Dashboard*.
+
+image::android_app/updating/android_play_release_dashboard.png[Google Play Console Release Dashboard, width=450]

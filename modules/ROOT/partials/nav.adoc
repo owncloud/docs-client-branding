@@ -1,21 +1,24 @@
-* xref:index.adoc[Overview]
-* Building a Branded Desktop Sync Client
-** xref:branded_desktop_client/branded_desktop_client.adoc[Building a Branded Desktop Sync Client]
-** xref:branded_desktop_client/update_branded_desktop_clients.adoc[Update Your Branded Desktop Clients]
-** xref:branded_desktop_client/branded_linux_desktop_clients.adoc[Deploy And Update Branded Linux Desktop Clients]
-* Building Branded Android Apps
-** xref:branded_android_app/building_branded_android_client.adoc[Building Your App With ownBrander]
-** xref:branded_android_app/publishing_android_app.adoc[Distributing Your Branded Android App]
-** xref:branded_android_app/update_android_app_2021.adoc[Update to Android App Bundle (starting August 2021)]
-* Building  Branded iOS Apps
-** xref:branded_ios_app/publishing_ios_app.adoc[Building and Distributing Your Branded iOS App]
-** xref:branded_ios_app/publishing_ios_app_2.adoc[Create Certificate Signing Request]
-** xref:branded_ios_app/publishing_ios_app_3.adoc[Create Bundle IDs]
-** xref:branded_ios_app/publishing_ios_app_4.adoc[Setting up Testing Devices]
-** xref:branded_ios_app/publishing_ios_app_5.adoc[Create Provisioning Profiles]
-** xref:branded_ios_app/publishing_ios_app_6.adoc[Creating a P12 Certificate]
-** xref:branded_ios_app/publishing_ios_app_7.adoc[Building Your iOS App With ownBrander]
-** xref:branded_ios_app/publishing_ios_app_8.adoc[Testing Your New Branded iOS App]
-** xref:branded_ios_app/publishing_ios_app_9.adoc[Publishing Your New Branded iOS App]
-** xref:branded_ios_app/publishing_ios_app_10.adoc[Additional Server Configuration]
-** xref:branded_ios_app/faq_ios_app_review_team.adoc[FAQ iOS App Review Team]
+* xref:index.adoc[Introduction]
+* Prerequisites
+** xref:prerequisites/ownbrander.adoc[ownBrander]
+* Branded Desktop App
+** xref:desktop_app/building.adoc[Building]
+** xref:desktop_app/updating.adoc[Updating]
+** xref:desktop_app/linux_deployment.adoc[Linux Deployment]
+* Branded Android App
+** xref:android_app/building.adoc[Building]
+** xref:android_app/updating.adoc[Updating]
+** xref:android_app/publishing.adoc[Publishing]
+* Branded iOS App
+** xref:ios_app/overview.adoc[Overview]
+** Preparation
+*** xref:ios_app/preparation/csr.adoc[Certificate Signing Request]
+*** xref:ios_app/preparation/create_bundle_ids.adoc[Create Bundle IDs]
+*** xref:ios_app/preparation/test_devices.adoc[Setting up Testing Devices]
+*** xref:ios_app/preparation/provisioning_profiles.adoc[Create Provisioning Profiles]
+*** xref:ios_app/preparation/p12_certificate.adoc[Creating a P12 Certificate]
+** xref:ios_app/building.adoc[Building]
+** xref:ios_app/testing.adoc[Testing]
+** xref:ios_app/publishing.adoc[Publishing]
+** xref:ios_app/additional_server.adoc[Additional Server Configuration]
+** xref:ios_app/faq.adoc[FAQ]

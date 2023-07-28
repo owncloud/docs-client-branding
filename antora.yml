@@ -7,3 +7,4 @@ nav:
 
 asciidoc:
   attributes:
+    customer-owncloud-url: 'https://customer.owncloud.com/owncloud'

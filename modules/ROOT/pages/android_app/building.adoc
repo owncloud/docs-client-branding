@@ -1,0 +1,69 @@
+= Building a Branded Android App
+:toc: right
+:description: To build a branded Android app, you need to supply your own artwork and use the ownBrander wizard in your account
+
+== Introduction
+
+{description} on {customer-owncloud-url}[customer.owncloud.com]. The ownBrander wizard details the required image specifications.
+
+== Configure Android Parameters
+
+If not already done, maintain the xref:prerequisites/ownbrander.adoc#common-section[Common Section] in ownBrander.
+
+Then click on the btn:[Android] section. Here you will find the *Required* area to fill out. You will also see two additional sections: *Optional* and *Advanced*. These are not mandatory for the processing of your branding experience.
+
+image::android_app/building/android_main_section.png[Brand Android main section, width=450]
+
+Start in the *Required* section and type in your application name, your Android package name and your account type.
+
+image::android_app/building/android_required.png[Android required section, width=450]
+
+=== Styling the Android App
+
+Building an Android app requires just a few images, preferably in PNG format. The wizard for your branding images also provides you with the exact dimension requirements. Please make certain that your images fulfill the specifications.
+
+You can now upload your images into the pre-defined boxes.
+
+image::android_app/building/android_image_wizard.png[Android image wizard, width=450]
+
+=== Signing
+
+Proceed to the section regarding the signing of your Android client and click on the checkbox if you want this option. Provide the required information for the three fields:
+
+* Key Store Password
+* Key Alias
+* Key Alias Password
+
+NOTE: You will need these credentials in the Google Play Store Console. 
+
+== Generating Your Branded App
+
+After branding for the first time or after performing any modifications that will update your app, click the btn:[Generate Android App] button:
+
+image::android_app/building/android_generate.png[Android generate button, width=450]
+
+The following information will pop up - click btn:[OK] to finalize.
+
+image::android_app/building/android_created.png[Android created branding window, width=450]
+
+== Download Your Branded App
+
+After the above mentioned time frame, open your account at: {customer-owncloud-url}/[customer.owncloud.com]
+
+The ownBrander produces three files required to build your app. These are automatically uploaded into your personal folder. 
+
+Choose the folder with your name to find the folders for your various branded clients.
+
+image::android_app/building/android_your_folder.png[Android your folder, width=450]
+
+Choose the *Mobile App for Android* folder. This folder should contain the three files seen in the image below.
+
+image::android_app/building/android_app_folder.png[Android app folder, width=450]
+
+The *.aab* file is of relevance for your app in the Google Play Console.
+
+image::android_app/building/android_files.png[Android files, width=450]
+
+You now must sign your branded Android app in the Google Play Store in order to distribute it to your users.
+
+
