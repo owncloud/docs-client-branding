@@ -4,7 +4,7 @@
 
 == Introduction
 
-{description} Follow these instructions exactly and in order to have a branded iOS app that you can distribute to your users.
+{description} Follow these instructions exactly in order to have a branded iOS app that you can distribute to your users.
 
 == Preparation
 
