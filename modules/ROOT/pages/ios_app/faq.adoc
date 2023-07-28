@@ -24,7 +24,7 @@ The iOS app takes advantage of the `File Provider` extensions so that those apps
 
 *Answer:*
 
-Sometimes, usually, the first time the ownCloud app is submitted, it is rejected because it is included the background mode, Apple rejected it because in the past some apps used this trick to avoid the app to be fully closed. Howerver, the ownCloud app used it only when music is played. This may be checked by Apple reviewers, what we suggest is to be proactive, instead of waiting for the app to be rejected because of that, adding an explanation line, something such as: You may notice that the app is ready to play music not only in foreground but also in background, for you to test it we have uploaded to the test account file xyz.
+Sometimes, the first time the ownCloud app is submitted, it is rejected because it includes the background mode option. Apple rejected it because in the past some apps used this trick to avoid the app being fully closed. However, the ownCloud app used it only when music is played. This may be checked by Apple reviewers. What we suggest is to be proactive, instead of waiting for the app to be rejected because of that, add an explanation line, something such as: You may notice that the app is ready to play music not only in foreground but also in background, for you to test it we have uploaded to the test account file xyz.
 
 == Content Rights
 
