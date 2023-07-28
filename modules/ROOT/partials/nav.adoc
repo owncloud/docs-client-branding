@@ -7,8 +7,8 @@
 ** xref:desktop_app/linux_deployment.adoc[Linux Deployment]
 * Branded Android App
 ** xref:android_app/building.adoc[Building]
-** xref:android_app/updating.adoc[Updating]
 ** xref:android_app/publishing.adoc[Publishing]
+** xref:android_app/updating.adoc[Updating]
 * Branded iOS App
 ** xref:ios_app/overview.adoc[Overview]
 ** Preparation
