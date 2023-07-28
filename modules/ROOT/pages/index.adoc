@@ -6,11 +6,11 @@
 
 {description}
 
-When you are interested in branding your client, you need to have a branding subscription. Please use the {oc-contact-url}[ownCloud contact form] to get in touch.
+If you are interested in branding your client, you need to have a branding subscription. Please use the {oc-contact-url}[ownCloud contact form] to get in touch.
 
 == Branding Benefits
 
-Compared to standard clients publicly available, you can provide your customers and/or users a branded client with white-labeling, theming, feature customization etc. This can be very beneficial to have the corporate look and feel, predefined or disabled settings, profiles and update services just to name some. 
+Compared to standard clients publicly available, you can provide your customers and/or users with a branded client with white-labeling, theming, feature customization etc. It can be very beneficial to have the corporate look and feel, predefined or disabled settings, profiles and update services just to name some. 
 
 == Target Audience
 

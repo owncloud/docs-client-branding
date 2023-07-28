@@ -10,7 +10,7 @@ If you currently do not have a subscription, use the {oc-contact-url}[ownCloud c
 
 == Login
 
-Login to {customer-owncloud-url}[customer.owncloud.com] with your credentials.
+Log in to {customer-owncloud-url}[customer.owncloud.com] with your credentials.
 
 image::prerequisites/ownbrander/login.png[image]
 

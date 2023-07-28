@@ -54,7 +54,7 @@ Next choose the btn:[iOS Distribution (App Store and Ad Hoc)]
 
 image::ios_app/preparation/csr/cert-3.png[image, width=450]
 
-Click btn:[Choose File] button and select your previously created CSR, in this example your *iosapp.certSigningRequest*. Press btn:[Continue]
+Click the btn:[Choose File] button and select your previously created CSR, in this example your *iosapp.certSigningRequest*. Press btn:[Continue].
 
 image::ios_app/preparation/csr/cert-4.png[image, width=450]
 
@@ -62,7 +62,7 @@ Your new certificate has been created. Press btn:[Download] to download it to yo
 
 image::ios_app/preparation/csr/cert-5.png[image, width=450]
 
-Your certificate can be found in Downloads under the name of *ios_distribution.cer*
+Your certificate can be found in Downloads under the name *ios_distribution.cer*.
 
 image::ios_app/preparation/csr/cert-6.png[image, width=450]
 

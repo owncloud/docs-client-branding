@@ -11,7 +11,7 @@
 
 == Publish for General Distribution on iTunes
 
-At last, after following all the previous steps and passing beta testing, your branded iOS app is ready to publish for general distribution on iTunes. You need a Mac computer with Xcode installed (Xcode is a free download), and you need the xref:ios_app/preparation/provisioning_profiles.adoc[eight provisioning profiles] (4 Ad Hoc provisioning profiles and 4 Apple Store profiles) and P12 certificate file that you created copied to the same computer that you are using to upload your app to iTunes. You will also need a number of screenshots of your app in specific sizes and resolutions, which are detailed in your iTunes Connect setup screen.
+At last, after following all the previous steps and passing beta testing, your branded iOS app is ready to be published for general distribution on iTunes. You need a Mac computer with Xcode installed (Xcode is a free download), and you need the xref:ios_app/preparation/provisioning_profiles.adoc[eight provisioning profiles] (4 ad hoc provisioning profiles and 4 app store profiles) and the P12 certificate file that you created and copied to the same computer that you are using to upload your app to iTunes. You will also need a number of screenshots of your app in specific sizes and resolutions, which are detailed in your iTunes Connect setup screen.
 
 TIP: Apple must review and approve your app, and the approval process can take several days to several weeks.
 
@@ -23,7 +23,7 @@ Next, go back to the https://developer.apple.com/membercenter/index.action[Apple
 
 image::ios_app/publishing/ios-publish-3.png[image, width=450]
 
-After logging in click the blue btn:[My Apps] button. This takes you to the main screen for managing your apps on iTunes.
+After logging in, click the blue btn:[My Apps] button. This takes you to the main screen for managing your apps on iTunes.
 
 image::ios_app/publishing/ios-publish.png[image]
 
@@ -98,7 +98,7 @@ In the menu:Build[] section, click the plus button and select your app.
 
 image::ios_app/publishing/ios-publish-14.png[image, width=450]
 
-The menu:App Review Information[] requires contact information, and some information about your app to guide reviewers. Remember, everyone on iTunes can review your app, so it's in your best interest to be helpful. You may optionally provide a login for a demo account.
+The menu:App Review Information[] requires contact information and some information about your app to guide reviewers. Remember, everyone on iTunes can review your app, so it's in your best interest to be helpful. You may optionally provide a login for a demo account.
 
 image::ios_app/publishing/ios-publish-12.png[image, width=450]
 
@@ -106,17 +106,17 @@ The menu:Version Release[] section allows you to choose between automatic releas
 
 == Pricing and Territories
 
-Next, you must go to the menu:Pricing[] page to set your price, and to select the territories you want your app to be available in.
+Next, you must go to the menu:Pricing[] page to set your price and to select the territories you want your app to be available in.
 
 image::ios_app/publishing/ios-publish-13.png[image, width=450]
 
 == Submit For Review
 
-When you have filled in all the required forms and provided the required screenshots, click btn:[Save] and then *Submit for Review*. If anything needs to be corrected you will see messages telling you exactly what must be fixed.
+When you have filled in all the required forms and provided the required screenshots, click btn:[Save] and then *Submit for Review*. If anything needs to be corrected, you will see messages telling you exactly what must be fixed.
 
 The next screen is legalese; click the appropriate Yes or No boxes, and then click the btn:[Submit] button.
 
-You are now finished. No really, you are. When you return to your menu:My Apps[] page you'll see that the status of your app has changed to *Waiting for review*. In a few days, or perhaps many days, your app will either be approved or rejected. If it is rejected Apple will tell you what you need to do to get it approved.
+You are now finished. No really, you are. When you return to your menu:My Apps[] page you'll see that the status of your app has changed to *Waiting for review*. In a few days, or perhaps many days, your app will either be approved or rejected. If it is rejected, Apple will tell you what you need to do to get it approved.
 
 == FAQ
 

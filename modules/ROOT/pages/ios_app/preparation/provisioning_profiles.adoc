@@ -10,10 +10,10 @@
 
 Eight provisioning profiles need to be created:
 
-* 4 Ad Hoc and
-* 4 App Store.
+* 4 ad hoc and
+* 4 app store.
 
-You will email the four Ad Hoc profiles, and your P12 certificate (which you will create after your provisioning profiles), to support@owncloud.com after building your branded app with the ownBrander app on {customer-owncloud-url}[customer.owncloud.com]. *Do not send us the App Store profiles.* All eight of these profiles must be stored on your Mac PC.
+You will email the four ad hoc profiles and your P12 certificate (which you will create after your provisioning profiles), to support@owncloud.com after building your branded app with the ownBrander app on {customer-owncloud-url}[customer.owncloud.com]. *Do not send us the app store profiles.* All eight of these profiles must be stored on your Mac PC.
 
 == Ad Hoc Provisioning Profiles
 
@@ -39,7 +39,7 @@ Name your provisioning profile with a descriptive *Profile Name* and click btn:[
 
 image::ios_app/preparation/provisioning_profiles/cert-40.png[image, width=450]
 
-When it has generated, download your new profile to your Mac computer.
+When it has been generated, download your new profile to your Mac computer.
 
 image::ios_app/provisioning_profiles/cert-50.png[image, width=450]
 
@@ -120,17 +120,17 @@ There is a 50-character limit, but don’t worry about counting characters becau
 
 image::ios_app/preparation/provisioning_profiles/cert-58.png[image, width=450]
 
-Download it to your Mac computer, and then double-click to install it in Xcode. You should now see all of your Ad Hoc provisioning profiles listed in your "iOS Provisioning Profiles".
+Download it to your Mac computer, and then double-click to install it in Xcode. You should now see all of your ad hoc provisioning profiles listed in your "iOS Provisioning Profiles".
 
 image::ios_app/preparation/provisioning_profiles/cert-59.png[image, width=450]
 
 == App Store Provisioning Profiles
 
-Creating your four App Store profiles is the same as creating your Ad Hoc profiles, except that when you start you check the App Store checkbox, and you won’t select testing devices.
+Creating your four app store profiles works the same way as creating your ad hoc profiles, except that when you start you check the App Store checkbox, and you won’t select testing devices.
 
 image::ios_app/preparation/provisioning_profiles/cert-62.png[image, width=450]
 
-When you’re finished, you’ll have eight new provisioning profiles. Remember, when you build your app on ownBuilder you only send in the four Ad Hoc profiles, plus your P12 certificate.
+When you’re finished, you’ll have eight new provisioning profiles. Remember, when you build your app on ownBuilder, you should only send the four ad hoc profiles, plus your P12 certificate.
 
 image::ios_app/preparation/provisioning_profiles/cert-61.png[image, width=450]
 

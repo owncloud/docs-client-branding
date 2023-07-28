@@ -31,7 +31,7 @@ For the Android App Bundles, Play App Signing is required. For more details see:
 
 Navigate to the https://play.google.com/console/about/[Google Play Console] page and click on the btn:[Play Console] button.
 
-You will then land on the https://play.google.com/console/developers[Google Play Developer Account] sign-on page. After successful log-on, choose the appropriate developers account.
+You will then land on the https://play.google.com/console/developers[Google Play Developer Account] sign-on page. After successful log-on, choose the appropriate developer account.
 
 image::android_app/updating/android_play_developer.png[Google Play Developer Account, width=450]
 
@@ -49,12 +49,12 @@ and continue by clicking the btn:[Create new release] button.
 
 image::android_app/updating/android_play_new_release.png[Google Play Console New Release, width=450]
 
-Google Play Console will guide you through this. Follow the steps to validate your app-integrity.
+Google Play Console will guide you through this. Follow the steps to validate your app integrity.
 Click the btn:[Activate] button.
 
 image::android_app/updating/android_play_app_integrity.png[Google Play Console App Integrity, width=450]
 
-Since this is a new release version candidate, and the key comes from the Java KeyStore, choose this option. 
+Since this is a new release version candidate and the key comes from the Java KeyStore, choose this option. 
 Otherwise, choose according to your existing key scheme.
 
 image::android_app/updating/android_play_app_signing.png[Google Play Console App Signing, width=450]
@@ -71,7 +71,7 @@ Gather your keystore parameters:
 
 These are the parameters you previously used to sign your app. Perhaps you kept them stored in the ownBrander.
 
-Input the command below into an open terminal window. As seen in the screen after the command, you can click on the copy to clipboard icon (Step 2) to copy the entire command block, but you must modify the "foo" parts of the command as follows:
+Input the command below into an open terminal window. As seen in the screen after the command, you can click on the copy-to-clipboard icon (Step 2) to copy the entire command block, but you must modify the "foo" parts of the command as follows:
 
 * `foo.keystore` must be replaced by the `keystore name`, here: damken
 * `Alias` is the `app name`, here: damkencloud, aka the `Key Alias`.
@@ -85,7 +85,7 @@ image::android_app/updating/android_play_keystore.png[Google Play Console KeySto
 
 After executing the above command, you will be prompted to enter both your *KeyStore Password* and then your *Key Alias Password*. Keep in mind that these passwords remain invisible while you type them. Note that multiple entries or typos lead to errors.
 
-You can also check your signing parameters in ownBrander, if you have uploaded them for previous versions.
+You can also check your signing parameters in ownBrander if you have uploaded them for previous versions.
 
 image::android_app/updating/android_play_keystore_password.png[Google Play Console KeyStore Password, width=500]
 

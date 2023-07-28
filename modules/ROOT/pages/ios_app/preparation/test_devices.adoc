@@ -6,7 +6,7 @@
 
 {description}
 
-* The $99 Apple Developer account allows you to test your iOS apps on a maximum of 100 devices of each type:
+* The $99 Apple developer account allows you to test your iOS apps on a maximum of 100 devices of each type:
 +
 [source]
 ....
@@ -19,7 +19,7 @@ iPod Touch   100
 +
 You must register the UDID of each device in your Apple developer account.
 
-* If you have the $299 Enterprise account then you can install your app on any device without registering it.
+* If you have the $299 Enterprise account, then you can install your app on any device without registering it.
 
 == Identify and Use UDIDs
 
@@ -44,4 +44,4 @@ Click *Download sample files* to see examples of plain text and markup files.
 
 image::ios_app/preparation/test_devices/itunes-udid-4.png[image, width=450]
 
-When you are finished entering your device IDs click the btn:[Continue] button. Verify, and then click btn:[Done].
+When you are finished entering your device IDs, click the btn:[Continue] button. Verify, and then click btn:[Done].

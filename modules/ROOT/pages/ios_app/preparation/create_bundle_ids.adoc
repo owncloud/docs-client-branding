@@ -27,7 +27,7 @@ The next section, *App Services*, is where you select the services you want enab
 You can edit this anytime after you finish creating your *App ID*.
 Check *App Groups*, make your other selections and then click the btn:[Continue] button at the bottom.
 Now you can confirm all of your information.
-If everything is correct click btn:[Submit]; if you need to make changes use the btn:[Back] button.
+If everything is correct, click btn:[Submit]; if you need to make changes, use the btn:[Back] button.
 
 image::ios_app/preparation/create_bundle_ids/cert-11.png[image, width=450]
 
@@ -38,16 +38,16 @@ image::ios_app/preparation/create_bundle_ids/cert-12.png[image, width=450]
 
 == Create App Group
 
-The next step is to create an App Group and put your App ID in it. Go to menu:Identifiers[App Groups] and click the btn:[plus button] at the top right.
+The next step is to create an app group and put your app ID in it. Go to menu:Identifiers[App Groups] and click the btn:[plus button] at the top right.
 
 image::ios_app/preparation/create_bundle_ids/cert-13.png[image, width=450]
 
-Create a description for your app group, and a unique identifier in the format _group.com.MyCompany.MyAppGroup_.
-Then click btn:[Continue]
+Create a description for your app group and a unique identifier in the format _group.com.MyCompany.MyAppGroup_.
+Then click btn:[Continue].
 
 image::ios_app/preparation/create_bundle_ids/cert-14.png[image, width=450]
 
-Review the confirmation screen, and if everything looks correct click the btn:[Register] button.
+Review the confirmation screen, and if everything looks correct, click the btn:[Register] button.
 
 image::ios_app/preparation/create_bundle_ids/cert-15.png[image, width=450]
 
@@ -55,7 +55,7 @@ You’ll see a final confirmation screen; click btn:[Done].
 
 image::ios_app/preparation/create_bundle_ids/cert-16.png[image, width=450]
 
-When you click on btn:[App Groups] you will see your new app group.
+When you click on btn:[App Groups], you will see your new app group.
 
 image::ios_app/preparation/create_bundle_ids/cert-17.png[image, width=450]
 
@@ -87,7 +87,7 @@ image::ios_app/preparation/create_bundle_ids/cert-26.png[image, width=450]
 
 You will see one more confirmation: "Registration complete. This App ID is now registered to your account and can be used in your provisioning profiles." Click btn:[Done].
 
-Now you need to add it to your App Group. Go to *Identifiers > App IDs* and click on your new btn:[DocumentProvider Bundle ID] to open its configuration window, and then click the btn:[Edit] button at the bottom.
+Now you need to add it to your app group. Go to *Identifiers > App IDs* and click on your new btn:[DocumentProvider Bundle ID] to open its configuration window, and then click the btn:[Edit] button at the bottom.
 
 image::ios_app/preparation/create_bundle_ids/cert-27.png[image, width=450]
 
@@ -99,7 +99,7 @@ Select your group and click btn:[Continue].
 
 image::ios_app/preparation/create_bundle_ids/cert-29.png[image, width=450]
 
-Once again you will asked if you really mean it. On the confirmation screen click btn:[Assign], and you’ll see the message _You have successfully updated the App Groups associations with your App ID._
+Once again you will be asked if you really mean it. On the confirmation screen click btn:[Assign], and you’ll see the message _You have successfully updated the App Groups associations with your App ID._
 
 == Create a DocumentProviderFileProvider Bundle ID
 
@@ -111,7 +111,7 @@ Confirm your new App ID and click btn:[Submit].
 
 image::ios_app/preparation/create_bundle_ids/cert-31.png[image, width=450]
 
-You will see one more confirmation; review it and click btn:[Done]. Now you need to add it to your App Group. Go to menu:dentifiers[App IDs] and click on your new btn:[DocumentProviderFileProvider Bundle ID] to open its configuration window, and then click the btn:[Edit] button.
+You will see one more confirmation; review it and click btn:[Done]. Now you need to add it to your app group. Go to menu:dentifiers[App IDs] and click on your new btn:[DocumentProviderFileProvider Bundle ID] to open its configuration window, and then click the btn:[Edit] button.
 
 image::ios_app/preparation/create_bundle_ids/cert-32.png[image, width=450]
 
@@ -138,7 +138,7 @@ Confirm your new App ID and click btn:[Submit].
 
 image::ios_app/preparation/create_bundle_ids/cert-54.png[image, width=450]
 
-You will see one more confirmation; review it and click btn:[Done]. Now you need to add it to your App Group. Go to menu:Identifiers[App IDs] and click on your new btn:[ShareExtApp Bundle ID] to open its configuration window, and then click the btn:[Edit] button.
+You will see one more confirmation; review it and click btn:[Done]. Now you need to add it to your app group. Go to menu:Identifiers[App IDs] and click on your new btn:[ShareExtApp Bundle ID] to open its configuration window, and then click the btn:[Edit] button.
 
 image::ios_app/preparation/create_bundle_ids/cert-55.png[image, width=450]
 
@@ -154,6 +154,6 @@ On the confirmation screen click btn:[Assign], and you’ll see the message "You
 
 == Four Completed App IDs
 
-Now you should have four new App IDs, and all of them should belong to your App Group.
+Now you should have four new app IDs, and all of them should belong to your app group.
 
 image::ios_app/preparation/create_bundle_ids/cert-37.png[image, width=450]

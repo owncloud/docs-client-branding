@@ -12,7 +12,7 @@ You can distribute the file with the .ipa extension, like our example MyBiz iOS 
 
 1. Connect your registered iPhone or iPad to a Mac running iTunes.
 2. Double-click your iOS .ipa file.
-3. You should see your device in the upper left corner of your iTunes windows. Click on it.
+3. You should see your device in the upper left corner of your iTunes window. Click on it.
 4. To make the branded iOS app visible in your iTunes apps list including an install button, click the btn:[Apps] button.
 5. The Install button changes to btn:[Will Install].
 6. To install the branded iOS app on your device, click the btn:[Sync] button in the lower-right corner.

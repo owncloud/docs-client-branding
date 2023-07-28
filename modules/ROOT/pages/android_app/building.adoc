@@ -20,7 +20,7 @@ image::android_app/building/android_required.png[Android required section, width
 
 === Styling the Android App
 
-Building an Android app requires just a few images, preferably in PNG format. The wizard for your branding images also provides you with the exact dimension requirements. Please make certain that your images fulfill the specifications.
+Building an Android app requires just a few images, preferably in PNG format. The wizard for your branding images also provides you with the exact dimension requirements. Please make sure that your images fulfill the specifications.
 
 You can now upload your images into the pre-defined boxes.
 
