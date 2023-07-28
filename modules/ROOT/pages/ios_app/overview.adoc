@@ -8,7 +8,7 @@
 
 == Preparation
 
-* A macOS computer with Xcode (free download) and Keychain Access (included in Utilities). This computer is essential to the entire process and will be linked to to your iOS Developer account. You will use it create and store distribution certificates, and to upload your app to iTunes Connect.
+* A macOS computer with Xcode (free download) and Keychain Access (included in Utilities). This computer is essential to the entire process and will be linked to your iOS Developer account. You will use it create and store distribution certificates, and to upload your app to iTunes Connect.
 
 * An iOS developer account on https://developer.apple.com/ios/[developer.apple.com/ios], which costs $99 per year.
 Or an Enterprise account for $299/yr. The developer account limits you to testing on 100 devices of each type (Apple TV, Apple Watch, iPad, iPhone, iPod Touch) which must be registered in your account. The Enterprise account allows testing on unlimited, unregistered devices.
