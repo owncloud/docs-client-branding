@@ -30,7 +30,7 @@ Sometimes, the first time the ownCloud app is submitted, it is rejected because 
 
 Does your app contain, display or access third-party content?
  
-If the branded app has the help option enable, the answer is yes. Within the help, we are having access to an external web. Otherwise, no
+If the branded app has the help option enabled, the answer is yes. Within the help, there is access to an external web. Otherwise, no
 
 == Advertising Identifier (IDFA)
 
