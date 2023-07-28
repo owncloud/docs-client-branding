@@ -1,6 +1,6 @@
 = Testing the Branded iOS App
 :toc: right
-:description: Testing the branded iOS app is a vital befor rolling out. This guide shows how to do it. 
+:description: Testing the branded iOS app is a vital before rolling out. This guide shows how to do it. 
 
 == Introduction
 
