@@ -19,7 +19,7 @@ Download the `xcarchive.zip` file from your account at {customer-owncloud-url}[c
 
 image::ios_app/publishing/ios-publish-2.png[image, width=450]
 
-Next, go back to the https://developer.apple.com/membercenter/index.action[Apple Developer Member Center] to log into iTunes Connect to set up your app storefront.
+Next, go back to the https://developer.apple.com/membercenter/index.action[Apple Developer Member Center] to log in to iTunes Connect to set up your app storefront.
 
 image::ios_app/publishing/ios-publish-3.png[image, width=450]
 
