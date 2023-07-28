@@ -1,6 +1,6 @@
 = Publishing Your Branded iOS App
 :toc: right
-:description: This documentat guides you thru publishing the branded iOS app. 
+:description: This document guides you through publishing the branded iOS app. 
 :screenshot-submission-process-url: https://developer.apple.com/news/?id=08082016a
 :screenshot-submission-process-video-url: https://developer.apple.com/videos/play/wwdc2016/305/?time=1700
 :sized-frames-url: https://itunes.apple.com/app/owncloud/id543672169
