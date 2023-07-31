@@ -1,0 +1,33 @@
+= ownBrander
+:toc: right
+:description: ownBrander is a web service that is used to brand your clients. You need to have a valid subscription and credentials to login.
+
+== Introduction
+
+{description}
+
+If you currently do not have a subscription, use the {oc-contact-url}[ownCloud contact form] to get in touch.
+
+== Login
+
+Log in to {customer-owncloud-url}[customer.owncloud.com] with your credentials.
+
+image::prerequisites/ownbrander/login.png[image]
+
+After successfully logging in to your account, navigate to the left side of your ownCloud instance and click on the inverted arrow to open the menu.
+
+Then click the ownBrander icon to open it.
+
+image::prerequisites/ownbrander/select_ownbrander.png[Select ownBrander]
+
+== Common Section
+
+In the ownBrander wizard at your account, start with the Common section at the top. These entries define your global defaults for all of the platforms in ownBrander. You can change them when you create your apps. You may override any settings inside the menu:Common[] section of the *Client* sections.
+
+// image::prerequisites/ownbrander/ownbrander-2.png[Common Section, width=450]
+
+Begin on the *Common Tab* and navigate to the *Required* area. Next, enter your application name and the URL of your ownCloud server in the corresponding fields.
+
+image::prerequisites/ownbrander/ownbrander_common.png[ownBrander Common, width=450]
+
+When you create production apps, you must then use your real app name, and the URL must point to your real ownCloud server. However, for testing purposes, these values can be anything.

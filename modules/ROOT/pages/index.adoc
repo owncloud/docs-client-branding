@@ -1,5 +1,17 @@
 = Branded Clients
+:toc: right
+:description: Welcome to the ownCloud Branded Clients documentation. This guide provides information on how to brand, update, deploy or distribute your branded client.
 
-* xref:branded_desktop_client/branded_desktop_client.adoc[Building a Branded Desktop Sync Client]
-* xref:branded_android_app/building_branded_android_client.adoc[Building Branded Android Apps]
-* xref:branded_ios_app/publishing_ios_app.adoc[Building Branded iOS Apps]
+== Introduction
+
+{description}
+
+If you are interested in branding your client, you need to have a branding subscription. Please use the {oc-contact-url}[ownCloud contact form] to get in touch.
+
+== Branding Benefits
+
+Compared to standard clients publicly available, you can provide your customers and/or users with a branded client with white-labeling, theming, feature customization etc. It can be very beneficial to have the corporate look and feel, predefined or disabled settings, profiles and update services just to name some. 
+
+== Target Audience
+
+This documentation focuses on the processes and how-to and is therefore addressed to technically-oriented staff.
