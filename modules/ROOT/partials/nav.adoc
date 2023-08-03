@@ -3,8 +3,8 @@
 ** xref:prerequisites/ownbrander.adoc[ownBrander]
 * Branded Desktop App
 ** xref:desktop_app/building.adoc[Building]
-** xref:desktop_app/updating.adoc[Updating]
 ** xref:desktop_app/linux_deployment.adoc[Linux Deployment]
+** xref:desktop_app/updating.adoc[Updating]
 * Branded Android App
 ** xref:android_app/building.adoc[Building]
 ** xref:android_app/publishing.adoc[Publishing]
@@ -13,7 +13,7 @@
 ** xref:ios_app/overview.adoc[Overview]
 ** Preparation
 *** xref:ios_app/preparation/csr.adoc[Certificate Signing Request]
-*** xref:ios_app/preparation/create_bundle_ids.adoc[Create Bundle IDs]
+*** xref:ios_app/preparation/create_app_ids.adoc[Create App IDs]
 *** xref:ios_app/preparation/test_devices.adoc[Setting up Testing Devices]
 *** xref:ios_app/preparation/provisioning_profiles.adoc[Create Provisioning Profiles]
 *** xref:ios_app/preparation/p12_certificate.adoc[Creating a P12 Certificate]
