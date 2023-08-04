@@ -14,17 +14,17 @@ Create a Provisioning Profile
 
 == Create Provisioning Profiles
 
-Now you must create your Provisioning Profiles. Go to *Account > Profiles* and click the *plus button* to open the "Register a New Provisioning Profile" screen.
+Now you must create your Provisioning Profiles. Go to menu:Account[Profiles] and click the btn:[plus] button to open the *Register a New Provisioning Profile* screen.
 
 image::ios_app/preparation/provisioning_profiles/profile-1.png[image, width=450]
 
 image::ios_app/preparation/provisioning_profiles/profile-2.png[image, width=450]
 
-If you want to distribute the App by yourself, select *Ad Hoc*. Otherwise, select *App Store*. The process is similar for both distributions.
+If you want to distribute the App by yourself, select btn:[Ad Hoc]. Otherwise, select btn:[App Store]. The process is similar for both distributions.
 
 image::ios_app/preparation/provisioning_profiles/profile-3.png[image, width=450]
 
-Use one of your *App IDs* created in the previous step, and select your Distribution certificate. If you are creating an *Ad Hoc* Profile, you also need to select a test device.
+Use one of your *App IDs* created in the previous step, and select your Distribution certificate. If you are creating an btn:[Ad Hoc] Profile, you also need to select a test device.
 
 image::ios_app/preparation/provisioning_profiles/profile-4.png[image, width=450]
 
@@ -36,7 +36,7 @@ image::ios_app/preparation/provisioning_profiles/profile-6.png[image, width=450]
 
 image::ios_app/preparation/provisioning_profiles/profile-7.png[image, width=450]
 
-Repeat this process four more times to create a *Provisioning Profile* for each *App ID* you created previously. In the end, you should have five Profiles, all either being *Ad Hoc* or *App Store* (But all of the same type) and each using one of the following *App IDs*:
+Repeat this process four more times to create a *Provisioning Profile* for each *App ID* you created previously. In the end, you should have five Profiles, all either being btn:[Ad Hoc] or btn:[App Store] (But all of the same type) and each using one of the following *App IDs*:
 
 * *com.yourcompany.ios-app*
 * *com.yourcompany.ios-app.ownCloud-File-Provider*
