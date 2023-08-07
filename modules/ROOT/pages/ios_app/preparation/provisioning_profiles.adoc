@@ -8,130 +8,42 @@
 
 == Overview
 
-Eight provisioning profiles need to be created:
+The next step is to create five provisioning profiles: either 5 *App Store* profiles if you want to distribute the App via the App Store, or 5 *Ad Hoc* profiles if you want to distribute it differently . All of these profiles must be stored on your Mac PC.
+Create a Provisioning Profile
 
-* 4 ad hoc and
-* 4 app store.
 
-You will email the four ad hoc profiles and your P12 certificate (which you will create after your provisioning profiles), to support@owncloud.com after building your branded app with the ownBrander app on {customer-owncloud-url}[customer.owncloud.com]. *Do not send us the app store profiles.* All eight of these profiles must be stored on your Mac PC.
+== Create Provisioning Profiles
 
-== Ad Hoc Provisioning Profiles
+Now you must create your Provisioning Profiles. Go to menu:Account[Profiles] and click the btn:[plus] button to open the *Register a New Provisioning Profile* screen.
 
-=== First Profile
+image::ios_app/preparation/provisioning_profiles/profile-1.png[image, width=450]
 
-Go to menu:Provisioning Profiles[All], then click the btn:[plus button] at the top right to open the _Add iOS Provisioning Profile_ screen. Select btn:[Ad Hoc] and click btn:[Continue].
+image::ios_app/preparation/provisioning_profiles/profile-2.png[image, width=450]
 
-image::ios_app/preparation/provisioning_profiles/cert-35.png[image, width=450]
+If you want to distribute the App by yourself, select btn:[Ad Hoc]. Otherwise, select btn:[App Store]. The process is similar for both distributions.
 
-On the *Select App ID* screen select the first of the three App IDs that you created and click btn:[Continue]. (The first one has the shortest name, if you followed the naming conventions in this manual.)
+image::ios_app/preparation/provisioning_profiles/profile-3.png[image, width=450]
 
-image::ios_app/preparation/provisioning_profiles/cert-36.png[image, width=450]
+Use one of your *App IDs* created in the previous step, and select your Distribution certificate. If you are creating an btn:[Ad Hoc] Profile, you also need to select a test device.
 
-Select the certificate that you created at the beginning of this process and click btn:[Continue].
+image::ios_app/preparation/provisioning_profiles/profile-4.png[image, width=450]
 
-image::ios_app/preparation/provisioning_profiles/cert-38.png[image, width=450]
+image::ios_app/preparation/provisioning_profiles/profile-5.png[image, width=450]
 
-Select the devices that you want to install and test your app on, then click btn:[Continue].
+Name your Certificate with a descriptive name so you know which *Profile* corresponds to which *App ID*, afterwards generate and download it.
 
-image::ios_app/preparation/provisioning_profiles/cert-39.png[image, width=450]
+image::ios_app/preparation/provisioning_profiles/profile-6.png[image, width=450]
 
-Name your provisioning profile with a descriptive *Profile Name* and click btn:[Generate].
+image::ios_app/preparation/provisioning_profiles/profile-7.png[image, width=450]
 
-image::ios_app/preparation/provisioning_profiles/cert-40.png[image, width=450]
+Repeat this process four more times to create a *Provisioning Profile* for each *App ID* you created previously. In the end, you should have five Profiles, all either being btn:[Ad Hoc] or btn:[App Store] (But all of the same type) and each using one of the following *App IDs*:
 
-When it has been generated, download your new profile to your Mac computer.
+* *com.yourcompany.ios-app*
+* *com.yourcompany.ios-app.ownCloud-File-Provider*
+* *com.yourcompany.ios-app.ownCloud-File-ProviderUI*
+* *com.yourcompany.ios-app.ownCloud-Intent*
+* *com.yourcompany.ios-app.ownCloud-Share-Extension*
 
-image::ios_app/provisioning_profiles/cert-50.png[image, width=450]
+image::ios_app/preparation/provisioning_profiles/profile-8.png[image, width=450]
 
-Find it on your Mac (usually the Download folder) and double-click to install it in Xcode.
-
-image::ios_app/preparation/provisioning_profiles/cert-41.png[image, width=450]
-
-=== Second Profile
-
-Return to the "Your provision profile is ready" screen, scroll to the bottom and click btn:[Add Another]. On the following screen select btn:[Ad Hoc] and click btn:[Continue].
-
-image::ios_app/preparation/provisioning_profiles/cert-35.png[image, width=450]
-
-This time select the *.DocumentProvider* app ID and click btn:[Continue].
-
-image::ios_app/preparation/provisioning_profiles/cert-42.png[image, width=450]
-
-Select the certificate that you created at the beginning of this process and click btn:[Continue].
-
-image::ios_app/preparation/provisioning_profiles/cert-43.png[image, width=450]
-
-Select the devices that you want to install and test your app on, then click btn:[Continue].
-These must be the same devices you selected for the first provisioning profile.
-
-image::ios_app/preparation/provisioning_profiles/cert-39.png[image, width=450]
-
-Give this provisioning profile the same name as your first profile, plus *.DocumentProvider* and click btn:[Generate].
-
-image::ios_app/preparation/provisioning_profiles/cert-44.png[image, width=450]
-
-Just like the first provisioning profile, download it to your Mac computer, and then double-click to install it in Xcode.
-
-=== Third Profile
-
-Return to the "Your provision profile is ready" screen, scroll to the bottom and click btn:[Add Another]. On the following screen select btn:[Ad Hoc] and click btn:[Continue].
-
-image::ios_app/preparation/provisioning_profiles/cert-35.png[image, width=450]
-
-This time select the *.DocumentProviderFileProvider* app ID and click *Continue*.
-
-image::ios_app/preparation/provisioning_profiles/cert-60.png[image, width=450]
-
-Select the certificate that you created at the beginning of this process and click btn:[Continue].
-
-image::ios_app/preparation/provisioning_profiles/cert-43.png[image, width=450]
-
-Select the devices that you want to install and test your app on, then click [btn:[Continue].
-These must be the same devices you selected for the first provisioning profile.
-
-image::ios_app/preparation/provisioning_profiles/cert-39.png[image, width=450]
-
-Give this provisioning profile the same name as your first profile plus *.DocumentProviderFileProvider* and click btn:[Generate]. There is a 50-character limit, but don’t worry about counting characters because it will be automatically truncated if you go over.
-
-image::ios_app/preparation/provisioning_profiles/cert-47.png[image, width=450]
-
-Download it to your Mac computer, and then double-click to install it in Xcode.
-
-=== Fourth Profile
-
-Return to the "Your provision profile is ready" screen, scroll to the bottom and click btn:[Add Another]. On the following screen select btn:[Ad Hoc] and click btn:[Continue].
-
-image::ios_app/preparation/provisioning_profiles/cert-35.png[image, width=450]
-
-This time select the *.ShareExtApp* app ID and click btn:[Continue].
-
-image::ios_app/preparation/provisioning_profiles/cert-46.png[image, width=450]
-
-Select the certificate that you created at the beginning of this process and click btn:[Continue].
-
-image::ios_app/preparation/provisioning_profiles/cert-43.png[image, width=450]
-
-Select the devices that you want to install and test your app on, then click btn:[Continue]. These must be the same devices you selected for the first provisioning profile.
-
-image::ios_app/preparation/provisioning_profiles/cert-39.png[image, width=450]
-
-Give this provisioning profile the same name as your first profile plus *.ShareExtApp* and click btn:[Generate].
-There is a 50-character limit, but don’t worry about counting characters because it will be automatically truncated if you go over.
-
-image::ios_app/preparation/provisioning_profiles/cert-58.png[image, width=450]
-
-Download it to your Mac computer, and then double-click to install it in Xcode. You should now see all of your ad hoc provisioning profiles listed in your "iOS Provisioning Profiles".
-
-image::ios_app/preparation/provisioning_profiles/cert-59.png[image, width=450]
-
-== App Store Provisioning Profiles
-
-Creating your four app store profiles works the same way as creating your ad hoc profiles, except that when you start you check the App Store checkbox, and you won’t select testing devices.
-
-image::ios_app/preparation/provisioning_profiles/cert-62.png[image, width=450]
-
-When you’re finished, you’ll have eight new provisioning profiles. Remember, when you build your app on ownBuilder, you should only send the four ad hoc profiles, plus your P12 certificate.
-
-image::ios_app/preparation/provisioning_profiles/cert-61.png[image, width=450]
-
-Go to the next page to learn how to create your P12 certificate.
+All of these *Provisioning Profiles* should be in your Apple developer Account and downloaded on your Mac.
