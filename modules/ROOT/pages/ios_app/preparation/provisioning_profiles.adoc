@@ -44,4 +44,4 @@ Repeat this process four more times to create a *Provisioning Profile* for each 
 
 image::ios_app/preparation/provisioning_profiles/profile-8.png[image, width=450]
 
-All of these *Provisioning Profiles* should be in your Apple developer Account and downloaded on your Mac.
+All of these *Provisioning Profiles* should be in your Apple developer account and downloaded on your Mac.
