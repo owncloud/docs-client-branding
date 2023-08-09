@@ -8,9 +8,7 @@
 
 == Overview
 
-The next step is to create five provisioning profiles: either 5 *App Store* profiles if you want to distribute the App via the App Store, or 5 *Ad Hoc* profiles if you want to distribute it differently . All of these profiles must be stored on your Mac PC.
-Create a Provisioning Profile
-
+The next step is to create five provisioning profiles: either 5 *App Store* profiles if you want to distribute the App via the App Store, or 5 *Ad Hoc* profiles if you want to distribute it differently. All of these profiles must be stored on your Mac PC.
 
 == Create Provisioning Profiles
 
