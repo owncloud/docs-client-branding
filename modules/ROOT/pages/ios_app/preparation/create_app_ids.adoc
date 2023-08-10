@@ -1,0 +1,58 @@
+= Create App IDs
+:toc: right
+:description: A bundle ID or bundle identifier uniquely identifies an application in Apple's ecosystem. This means that no two applications can have the same bundle identifier.
+
+== Introduction
+
+{description} To avoid conflicts, Apple encourages developers to use reverse domain name notation for choosing an application's bundle identifier.
+ 
+== Create App IDs
+
+In this step you need to create five *App IDs*. These are unique identifiers for your branded iOS app. You must also create an *App Group* and place your five *App IDs* in your App Group. You will need your base *App ID* and *App Group* when you build your app with the ownBrander app on customer.owncloud.com.
+
+== Create App ID
+
+Now you must create your App ID. Go to *Account > Identifiers* and click the *plus button* to open the "Register a new Identifier" screen.
+
+image::ios_app/preparation/create_bundle_ids/bundle-1.png[image, width=600]
+
+image::ios_app/preparation/create_bundle_ids/bundle-2.png[image, width=600]
+
+Choose *App IDs* and select *App* as type. 
+
+image::ios_app/preparation/create_bundle_ids/bundle-3.png[image, width=600]
+
+image::ios_app/preparation/create_bundle_ids/bundle-4.png[image, width=600]
+
+Fill in your *App ID Description*, which is anything you want, so make it helpful and descriptive. Enter your *App IDs* on the right. The first one should be named *com.yourcompany.ios-app*. You also need to enable only *App Groups* and *Associated Domains*, you shouldn't activate any *App services*.
+
+image::ios_app/preparation/create_bundle_ids/bundle-5.png[image, width=600]
+
+Create 4 other Identifiers with the same Settings (*App Groups* and *Associated Domains* enabled) and the following App IDs:
+
+* *com.yourcompany.ios-app.ownCloud-File-Provider*
+* *com.yourcompany.ios-app.ownCloud-File-ProviderUI*
+* *com.yourcompany.ios-app.ownCloud-Intent*
+* *com.yourcompany.ios-app.ownCloud-Share-Extension*
+
+Afterwards, you should have five identifiers in total with names similar to the following:
+
+image::ios_app/preparation/create_bundle_ids/bundle-6.png[image, width=600]
+
+== Create App Group
+
+The next step is to create an App Group and put your App ID in it. Press the *plus button* again but this time select *App Groups*.
+
+image::ios_app/preparation/create_bundle_ids/bundle-7.png[image, width=600]
+
+Give a fitting description and add *Identifier* in the format *group.com.yourcompany.ios-app*. Then click *Continue*.
+
+image::ios_app/preparation/create_bundle_ids/bundle-8.png[image, width=600]
+
+Now click on each of your five *App IDs* to add them to your *App Group* by clicking *Edit* and selecting the *App Group* you created.
+
+image::ios_app/preparation/create_bundle_ids/bundle-9.png[image, width=600]
+
+image::ios_app/preparation/create_bundle_ids/bundle-10.png[image, width=600]
+
+In the end, you should have *five App IDs*, all added to the *App Group* you created.
