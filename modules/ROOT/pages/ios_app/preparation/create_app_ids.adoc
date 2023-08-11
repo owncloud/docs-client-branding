@@ -1,10 +1,10 @@
 = Create App IDs
 :toc: right
-:description: A bundle ID or bundle identifier uniquely identifies an application in Apple's ecosystem. This means that no two applications can have the same bundle identifier.
+:description: A app ID or app identifier uniquely identifies an application in Apple's ecosystem. This means that no two applications can have the same app identifier.
 
 == Introduction
 
-{description} To avoid conflicts, Apple encourages developers to use reverse domain name notation for choosing an application's bundle identifier.
+{description} To avoid conflicts, Apple encourages developers to use reverse domain name notation for choosing an application's app identifier.
  
 == Create App IDs
 
