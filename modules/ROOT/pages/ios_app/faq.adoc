@@ -26,6 +26,22 @@ The iOS app takes advantage of the `File Provider` extensions so that those apps
 
 Sometimes, the first time the ownCloud app is submitted, it is rejected because it includes the background mode option. Apple rejected it because in the past some apps used this trick to avoid the app being fully closed. However, the ownCloud app uses it only when music is played. This may be checked by Apple reviewers. What we suggest is to be proactive. Instead of waiting for the app to be rejected because of that, add a line of explanation like: You may notice that the app is ready to play music not only in foreground but also in background. For you to test it, we have uploaded to the test account file xyz.
 
+== Background Location
+
+*Question:*
+
+* Why does your app declare support for location in the UIBackgroundModes key in your Info.plist file although we are unable to locate any features that require persistent location? Apps that declare support for location in the UIBackgroundModes key in your Info.plist file must have features that require persistent location.
+
+*Answer:*
+
+In the app settings under "Media Upload" you find the following explanation:
+____
+Use background location updates: If you would like background media uploads to be more reliable, you should enable background location updates. Otherwise background media uploads using background refresh technology would depend on how frequently you use the app.
+____
+
+It is also possible to build the app without the location feature using the https://doc.owncloud.com/ios-app/next/appendices/mdm.html#build-options[build.flags].
+
+
 == Content Rights
 
 Does your app contain, display or access third-party content?
