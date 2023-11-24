@@ -1,5 +1,9 @@
+site-dev.yml
+yarn-error.log
 cache/
 node_modules/
 public/
 pdf_web/
-yarn-error.log
+tmp/
+.DS_Store
+.vscode/
