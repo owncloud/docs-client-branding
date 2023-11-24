@@ -1,7 +1,8 @@
-# Create a New Version Branch for Branding Clients
+# Create a New Version Branch for Branded Clients
 
-Note that at the moment no branching is necessary for the Branding Clients repo as only the `next` branch is used. In case there will be branching for this repo implemented, follow the steps described below.
- 
+Note that at the moment **no branching** is necessary for the Branded Clients repo as only the `master` branch is used that appears a `next` in the documentation.
+
+<!--
 When doing a new release for Branding Clients like `1.x`, a new version branch must be created based on `master`. It is necessary to do this in four steps. Please set the new and former version numbers accordingly
 
 **Step 1: Create and configure the new `1.x` branch**
@@ -65,3 +66,5 @@ merging the 1.x-2 pdf is fixed.
 @mmattel @EParzefall @phil-davis
 post merging this, we need to backport all relevant changes to 1.x
 ```
+
+-->
