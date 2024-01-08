@@ -32,7 +32,7 @@ Check menu:Server URL Visible[] to make your ownCloud server URL the default, an
 
 image::ios_app/building/ownbrander-16.png[image, width=450]
 
-Now check the all-important *Bundle ID*. Make sure that this is exactly the same as the *Bundle ID* you created on https://developer.apple.com[developer.apple.com]. See xref:ios_app/preparation/create_bundle_ids.adoc[Create Bundle IDs] for more details.
+Now check the all-important *App ID*. Make sure that this is exactly the same as the *App ID* you created on https://developer.apple.com[developer.apple.com]. See xref:ios_app/preparation/create_app_ids.adoc[Create App IDs] for more details.
 
 image::ios_app/building/ownbrander-17.png[image, width=450]
 
