@@ -8,3 +8,5 @@ nav:
 asciidoc:
   attributes:
     customer-owncloud-url: 'https://customer.owncloud.com/owncloud'
+    latest-branded-version: {page-component-version}   # do not change, this is the value of the version key
+    previous-branded-version: {page-component-version} # do not change, this is the value of the version key
